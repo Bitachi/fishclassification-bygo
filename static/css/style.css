@@ -1,0 +1,45 @@
+.card {
+    box-sizing: border-box;
+    height: calc(100% - 1.5rem);
+    padding-top: 150px;
+    padding-bottom: 105px;
+}
+
+.card .card-image {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 150px;
+}
+
+.card .card-action {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 105px;
+}
+
+
+.card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-action ul {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flex .col.margin-center {
+    margin-left : 0px;
+}
+
+.copyright {
+    font-size: 9px;
+}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div class="row">
+    <div class="col s8 offset-s2">
+        <form id="upload_form" action="/" method="post" enctype="multipart/form-data">
+            <div class="file-field input-field row">
+                <div class="btn col s2">
+                    <span>ファイルを選択</span>
+                    <input type="file" name="file">
+                </div>
+            </div>
+            <div class="file-path-wrapper col s8">
+                <input type="text" class="file-path validate" placeholder="左向きの魚の画像を選択してください">
+            </div>
+            <div class="col s2">
+                <button class="btn waves-effect waves-light blue" type="submit">表示</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!--DIsplay image-->
+<div class="row">
+    <div class="col s5 offset-s3">
+        <img src={{file_path}} id="upload_img" class="responsive-img" alt="アップロード画像">
+    </div>
+    <div class="col s1">
+        <form action="/classify" id="start_infer" method="post" enctype="multipart/form-data">
+            <button class="btn waves-effect waves-lightr blue" name="image" type="submit" value={{file_path}}>推論</button>
+        </form>
+    </div>
+    <div class="col s3"></div>
+</div>
+{% endblock %}
