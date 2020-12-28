@@ -4,10 +4,10 @@ import http.client, urllib.request, urllib.parse, urllib.error, base64
 from azure.cognitiveservices.vision.customvision.prediction import CustomVisionPredictionClient
 from msrest.authentication import ApiKeyCredentials
 
-base_url = 'https://fish-classifying.cognitiveservices.azure.com/'
-projectID = '6c6790a0-7217-4e75-bded-78048785ac6b'
-publish_iteration_name = 'Iteration2'
-prediction_key = '9b301bb9eadf46868410fb31fa19d0d1'
+base_url = 'https://gotakami.cognitiveservices.azure.com/'
+projectID = '7f060117-6785-4542-a801-06bd9854a735'
+publish_iteration_name = 'Iteration1'
+prediction_key = 'ec7e0565707a4f9aaca0ba995a89eb79'
 
 # 予想確率の閾値
 threshold = 10
